@@ -8,7 +8,7 @@ import lombok.*;
 @Getter
 @ToString
 public class DefaultApiResponse {
-    private String code;
+    private int code;
     private String message;
     private Object data;
 }

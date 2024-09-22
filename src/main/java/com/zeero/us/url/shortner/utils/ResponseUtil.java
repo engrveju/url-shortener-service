@@ -8,7 +8,7 @@ public class ResponseUtil {
     public static DefaultApiResponse successResponse(){
         DefaultApiResponse defaultApiResponse = new DefaultApiResponse();
 
-        defaultApiResponse.setCode(HttpStatus.OK.name());
+        defaultApiResponse.setCode(HttpStatus.OK.value());
         defaultApiResponse.setMessage("Request Successful");
         return defaultApiResponse;
     }
@@ -21,7 +21,7 @@ public class ResponseUtil {
 
     public static DefaultApiResponse successResponse(HttpStatus status, Object data){
         DefaultApiResponse defaultApiResponse = new DefaultApiResponse();
-        defaultApiResponse.setCode(status.name());
+        defaultApiResponse.setCode(status.value());
         defaultApiResponse.setMessage("Request Successful");
         defaultApiResponse.setData(data);
         return defaultApiResponse;
@@ -31,7 +31,7 @@ public class ResponseUtil {
     public static DefaultApiResponse errorResponse(HttpStatus status,String message){
         DefaultApiResponse defaultApiResponse = new DefaultApiResponse();
 
-        defaultApiResponse.setCode(status.name());
+        defaultApiResponse.setCode(status.value());
         defaultApiResponse.setMessage(message);
         return defaultApiResponse;
     }
@@ -39,7 +39,7 @@ public class ResponseUtil {
     public static DefaultApiResponse errorResponse(HttpStatus status){
         DefaultApiResponse defaultApiResponse = new DefaultApiResponse();
 
-        defaultApiResponse.setCode(status.name());
+        defaultApiResponse.setCode(status.value());
         defaultApiResponse.setMessage("Request Failed");
         return defaultApiResponse;
     }

@@ -5,7 +5,6 @@ import com.zeero.us.url.shortner.dto.UrlShortenerDto;
 import com.zeero.us.url.shortner.service.UrlService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import lombok.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
