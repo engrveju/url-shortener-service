@@ -25,6 +25,7 @@ The URL Shortener Service is a web application that enables users to input long 
 - **Database**:
     - **H2**: Lightweight, in-memory database for development.
     - **MySQL**: For production, providing durability and scalability.
+    - **FLYWAY**: For Database Migration.
 - **Maven**: For dependency management and build automation.
 
 ## Getting Started
